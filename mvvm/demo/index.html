@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MVVM</title>
+</head>
+
+<body>
+  <div id="app">
+    <h2>{{title}}</h2>
+    <input type="text" v-model="content" />
+    <h1>{{content}}</h1>
+    <button v-on:click="clickMe">事件绑定</button>
+  </div>
+  <script src="./Dep.js"></script>
+  <script src="./observer.js"></script>
+  <script src="./watcher.js"></script>
+  <script src="./Compile.js"></script>
+  <script src="./index.js"></script>
+  <script type="text/javascript">
+    new Vue({
+      el: '#app',
+      data: {
+        title: '自制 vue',
+        content: '这是双向绑定的模板内容',
+      },
+      methods: {
+        clickMe() {
+          this.title = '点击后的标题'
+        },
+      },
+      mounted() {
+        setTimeout(() => {
+          this.title = 'mounted 后的标题'
+        }, 1000)
+      },
+    })
+  </script>
+</body>
+
+</html>
