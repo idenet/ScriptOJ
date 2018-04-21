@@ -7,7 +7,7 @@
 /**
  *
  *
- * @author idenet(leimiliya@hotmail.com)
+ * @author 香香鸡
  * @param {[]int} array
  * @param {int} key
  * @returns {int}
