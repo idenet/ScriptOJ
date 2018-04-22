@@ -6,7 +6,7 @@
 
 /**
  *
- *
+ * 对数级别增长数量级
  * @author 香香鸡
  * @param {[]int} array
  * @param {int} key

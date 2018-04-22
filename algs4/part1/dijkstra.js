@@ -14,7 +14,7 @@ function evaluation(expression) {
     else if (v === '*') operators.push(v)
     else if (v === '/') operators.push(v)
     else if (v === ')') {
-      // 如果是右括号，则进行计算，病吧计算结果入栈
+      // 如果是右括号，则进行计算，并把计算结果入栈
       let op = operators.pop() // 操作符
       let val = values.pop() // 计算数
       if (op === '+') val = values.pop() + val

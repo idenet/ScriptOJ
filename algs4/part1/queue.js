@@ -8,7 +8,10 @@ class Queue {
   size() {
     return this.queue.length
   }
-  unshift(item) {
-    this.queue && this.queue.unshift(item)
+  enqueue(element) {
+    this.queue.push(element)
+  }
+  dequeue() {
+    return this.queue.shift()
   }
 }
