@@ -71,19 +71,23 @@ class SequentialSearchST {
   }
 }
 
-let sequentialSearchST = new SequentialSearchST()
-
-sequentialSearchST.put('e', 4)
-sequentialSearchST.put('e', 5)
-sequentialSearchST.put('f', 2)
-sequentialSearchST.put('g', 3)
-sequentialSearchST.put('h', 6)
-
-console.log(sequentialSearchST.delete('g'))
-
-let iterator = sequentialSearchST.iterator()
-
-while (iterator.hasNext()) {
-  let { key, value } = iterator.next()
-  console.log(key, value)
+module.exports = {
+  SequentialSearchST
 }
+
+// let sequentialSearchST = new SequentialSearchST()
+
+// sequentialSearchST.put('e', 4)
+// sequentialSearchST.put('e', 5)
+// sequentialSearchST.put('f', 2)
+// sequentialSearchST.put('g', 3)
+// sequentialSearchST.put('h', 6)
+
+// console.log(sequentialSearchST.delete('g'))
+
+// let iterator = sequentialSearchST.iterator()
+
+// while (iterator.hasNext()) {
+//   let { key, value } = iterator.next()
+//   console.log(key, value)
+// }

@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "启动程序",
-      "program": "${workspaceFolder}/algs4/part3-search/RedBlackBST.js"
+      "program": "${workspaceFolder}/algs4/part2-sort/quickSort.js"
     }
   ]
 }
