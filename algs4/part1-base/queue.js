@@ -1,17 +1,22 @@
 class Queue {
   constructor() {
-    this.queue = []
+    this.items = []
   }
   isEmpty() {
-    this.queue.length = 0
+    return this.items.length === 0
   }
   size() {
-    return this.queue.length
+    return this.items.length
   }
   enqueue(element) {
-    this.queue.push(element)
+    this.items.push(element)
   }
   dequeue() {
-    return this.queue.shift()
+    let item = this.items.shift()
+    return item
   }
+}
+
+module.exports = {
+  Queue
 }
